@@ -101,7 +101,7 @@ class RegisterController extends Controller
         return view('auth.register');
     }
 
-//bbbbbbbbbb
+    //aaaaaaaaa
 
     public function added(Request $request){
         $username = $request->input('username');
