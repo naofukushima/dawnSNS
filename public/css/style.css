@@ -98,24 +98,56 @@ h1 {
 
 
 
-
-
-
-
-
-
-
-/* main content */
+/* ==============================================
+メインコンテンツ
+============================================== */
 #row {
-    display: flex;
-    flex-flow: row wrap;
+    display: grid;
+    grid-template-columns: auto 256px;
 }
 
-#container {
-    flex: 0 0 80%;
-}
+#container {}
 
+
+/* ==============================================
+サイドバー
+============================================== */
 #side-bar {
-    flex: 0 0 19%;
-    border-left: 1px solid #6C6C6C;
+    height: 100%;
+    font-size: 14px;
+    width: 256px;
+    border-left: 2px solid #6C6C6C;
+}
+
+#confirm {
+    padding: 10px;
+    border-bottom: 1px solid #c0c0c0;
+    margin-bottom: 30px;
+}
+
+#confirm .btn {
+    margin: 16px 0 16px auto;
+}
+
+.number-of-people {
+    margin: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    height: 40px;
+    width: 120px;
+    margin: auto;
+}
+
+.btn a {
+    height: 40px;
+    width: 120px;
+    display: block;
+    color: #fff;
+    background-color: #3C4767;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 4px;
 }

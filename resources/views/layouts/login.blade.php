@@ -22,6 +22,7 @@
 <body>
     <header>
         <h1><a href="/top"><img src="images/main_logo.png"></a></h1>
+            <!-- アコーディオンメニュー -->
             <div class="accordion-menu">
                 <details>
                     <summary>
@@ -38,28 +39,29 @@
             </div>
     </header>
     <div id="row">
+
         <div id="container">
             @yield('content')
         </div >
+
         <div id="side-bar">
             <div id="confirm">
                 <p>〇〇さんの</p>
-                <div>
-                <p>フォロー数</p>
-                <p>〇〇名</p>
+                <div class="number-of-people">
+                    <p>フォロー数</p>
+                    <p>〇〇名</p>
                 </div>
                 <p class="btn"><a href="">フォローリスト</a></p>
-                <div>
-                <p>フォロワー数</p>
-                <p>〇〇名</p>
+                <div class="number-of-people">
+                    <p>フォロワー数</p>
+                    <p>〇〇名</p>
                 </div>
                 <p class="btn"><a href="">フォロワーリスト</a></p>
             </div>
             <p class="btn"><a href="">ユーザー検索</a></p>
         </div>
     </div>
-    <footer>
-    </footer>
+
     <script src="JavaScriptファイルのURL"></script>
     <script src="JavaScriptファイルのURL"></script>
 </body>
