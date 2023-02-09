@@ -21,19 +21,21 @@
 </head>
 <body>
     <header>
-        <div id = "head">
-        <h1><a><img src="images/logo.png"></a></h1>
-            <div id="">
-                <div id="">
-                    <p>〇〇さん<img src="images/arrow.png"></p>
-                <div>
-                <ul>
-                    <li><a href="/top">ホーム</a></li>
-                    <li><a href="/profile">プロフィール</a></li>
-                    <li><a href="/logout">ログアウト</a></li>
-                </ul>
+        <h1><a href="/top"><img src="images/main_logo.png"></a></h1>
+            <div class="accordion-menu">
+                <details>
+                    <summary>
+                        <p>〇〇さん</p>
+                        <span class="arrow"></span>
+                        <img src="images/dawn.png" class="profile-icon">
+                    </summary>
+                    <ul>
+                        <li><a href="/top">ホーム</a></li>
+                        <li><a href="/profile">プロフィール</a></li>
+                        <li><a href="/logout">ログアウト</a></li>
+                    </ul>
+                </details>
             </div>
-        </div>
     </header>
     <div id="row">
         <div id="container">
