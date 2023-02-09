@@ -26,13 +26,13 @@
             <div class="accordion-menu">
                 <details>
                     <summary>
-                        <p>〇〇さん</p>
+                        <p>{{ Auth::user()->username }}さん</p>
                         <span class="arrow"></span>
                         <img src="images/dawn.png" class="profile-icon">
                     </summary>
                     <ul>
-                        <li><a href="/top">ホーム</a></li>
-                        <li><a href="/profile">プロフィール</a></li>
+                        <li><a href="/top">HOME</a></li>
+                        <li><a href="/profile">プロフィール編集</a></li>
                         <li><a href="/logout">ログアウト</a></li>
                     </ul>
                 </details>
@@ -46,7 +46,7 @@
 
         <div id="side-bar">
             <div id="confirm">
-                <p>〇〇さんの</p>
+                <p>{{ Auth::user()->username }}さんの</p>
                 <div class="number-of-people">
                     <p>フォロー数</p>
                     <p>〇〇名</p>
